@@ -1,0 +1,67 @@
+/* Styles for the main sidenav container */
+.main {
+    /* height: calc(100vh - 64px); */
+    height: 100vh;
+
+    display: flex;
+  }
+  
+  /* Styles for the sidenav */
+  .sidenav {
+    width: 270px; /* Width of the sidenav */
+    background-color: #8fb6cc; /* Background color of the sidenav */
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 2px 0 5px rgba(226, 219, 219, 0.1); /* Optional shadow for a nice effect */
+    border-radius: 0%;
+    
+  }
+  
+  /* Styles for the h4 element */
+  h1 {
+    text-align: center;                                                                             
+    font-size: 25px;
+    box-shadow: #3f51b5;
+  }
+  
+  /* Styles for the menu button */
+  .menu-button {
+    width: 100%;
+    justify-content: start;
+    margin-top: 16px;
+    color:white !important;
+
+  }
+  .menu-button:hover{
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(192, 192, 240) !important;
+  }
+  /* mat-icon {
+    color: rgb(53, 51, 51) !important;
+  } */
+  
+  
+  /* Styles for the mat-divider */
+  mat-divider {
+    margin: 8px 0; /* Margin around the divider */
+  }
+  
+  /* Additional styling to ensure proper layout */
+  .mat-elevation-z8 {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Example shadow for elevation */
+  }
+  .profile-button {
+    margin-left: auto;
+  }
+  .main-body{
+    width: 100%;
+    background-color: #e6e9ed;
+    height: 100%;
+  }
+  .main-contain{
+    width: 100%;
+  }
+
+  

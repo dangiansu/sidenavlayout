@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <button mat-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSideNav()">
+    <mat-icon class="mt-18">{{ isSidenavOpened ? 'menu_open' : 'menu' }}</mat-icon>
+  </button>
+  <span>My App</span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="profile">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>perm_identity</mat-icon>
+      <span>Profile</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

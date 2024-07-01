@@ -1,0 +1,42 @@
+<mat-drawer-container class="main">
+  <mat-drawer mode="side" #drawer="matDrawer" class="sidenav" opened>
+    <h1>Om Workspace</h1>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/dashboard">
+      <mat-icon>dashboard</mat-icon>
+      <span>Dashboard</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/students">
+      <mat-icon>school</mat-icon>
+      <span>Students</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/subjects">
+      <mat-icon>subject</mat-icon>
+      <span>Subjects</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/parents">
+      <mat-icon>transcribe</mat-icon>
+      <span>Parents</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/ranking">
+      <mat-icon>leaderboard</mat-icon>
+      <span>Ranking</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/announcement">
+      <mat-icon>campaign</mat-icon>
+      <span>Announcement</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/notice">
+      <mat-icon>info</mat-icon>
+      <span>Notice</span>
+    </button>
+  </mat-drawer>
+  <mat-drawer-content class="main-contain">
+    <app-header
+      [isSidenavOpened]="isSidenavOpened"
+      (toggleSidenav)="toggleSideNav()"
+    ></app-header>   
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
